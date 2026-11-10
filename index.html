@@ -5,22 +5,26 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 
-<meta name="theme-color" content="#A3131F">
+<meta name="theme-color" content="#0F2A22">
+
+
+
+
 <link rel="icon" href="https://engage.autotorque.ai/objects/quick-uploads/1064/d25294f06750ae52.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Gloock&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..600,0..100,0..1&display=swap" rel="stylesheet">
 
 
 <!-- SEO Meta Tags -->
 <title>Santa Magic | Personalised video messages from Santa and Mrs Claus</title>
-<meta name="description" content="A personalised video message from Santa or Mrs Claus, written around your child" />
+<meta name="description" content="A personalised video from Santa or Mrs Claus, written with you around your child" />
 <meta property="og:title" content="Santa Magic | Personalised video messages from Santa and Mrs Claus" />
-<meta property="og:description" content="A personalised video message from Santa or Mrs Claus, written around your child" />
+<meta property="og:description" content="A personalised video from Santa or Mrs Claus, written with you around your child" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Santa Magic | Personalised video messages from Santa and Mrs Claus" />
-<meta name="twitter:description" content="A personalised video message from Santa or Mrs Claus, written around your child" />
+<meta name="twitter:description" content="A personalised video from Santa or Mrs Claus, written with you around your child" />
 <!-- End SEO Meta Tags -->
 <script data-lp-token-hydrate>
 (function(){try{
@@ -373,55 +377,136 @@
 <body>
 <header class="site-head" data-section="header">
  <div class="wrap">
-  <a class="brand" href="https://santamagic.com.au/"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/d25294f06750ae52.jpg" alt="" width="52" height="52"><span>Santa Magic</span></a>
+  <a class="brand" href="https://santamagic.com.au/"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/d25294f06750ae52.jpg" alt="" width="48" height="48"><span>Santa Magic</span></a>
   <nav class="nav" aria-label="Main">
+   <a class="hide-sm" href="#sample">Sample</a>
    <a class="hide-sm" href="#how">How it works</a>
    <a class="hide-sm" href="#questions">Questions</a>
-   <a class="hide-sm" href="https://santamagic.com.au/studio/">Studio</a>
    <a class="btn btn-red btn-sm" href="#order">Order now</a>
   </nav>
  </div>
 </header>
 
 <main>
-<section class="field-red hero" data-section="hero">
- <div class="ribbon-v" aria-hidden="true"></div>
+<section class="night hero" id="sample" data-section="hero">
  <div class="wrap hero-grid">
-  <div>
-   <h1 id="heroTitle">Santa has a message for someone special.</h1>
-   <p class="lede">A personalised video from Santa or Mrs Claus, written around their name and the moments that made their year. You read the script and hear the voice before anything is made.</p>
+  <div class="hero-copy">
+   <h1 id="heroTitle">Santa has a message for <span class="who" id="heroWho">someone special</span>.</h1>
+   <p class="lede">A personalised video from Santa or Mrs Claus, written with you around the people, pets and proud moments that made their year. You approve every word and hear the voice before anything is made.</p>
+   <div class="hero-tag">
+    <div class="tag">
+     <dl>
+      <dt><label for="tagName">To</label></dt>
+      <dd><input id="tagName" type="text" maxlength="24" placeholder="Their name" autocomplete="off" spellcheck="false"></dd>
+      <dt>From</dt>
+      <dd>Santa</dd>
+     </dl>
+    </div>
+   </div>
    <div class="hero-actions">
     <a class="btn btn-ivory" href="#order" id="heroCta">Create their video</a>
-    <span>A$24.95, ready in about 10 minutes</span>
+    <button class="link-play" type="button" data-play><span class="dot"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1v10l9-5z" fill="currentColor"/></svg></span>Watch a sample</button>
    </div>
+   <div class="hero-meta"><span>A$24.95, one video</span><span>Ready in about 10 minutes</span><span>Delivered in the chat and by email</span></div>
   </div>
-  <div class="hero-art">
-   <div class="arch"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/0cb8ec88451a68aa.jpg" alt="Santa in his toy workshop" width="760" height="950"></div>
-   <div class="tag">
-    <dl>
-     <dt><label for="tagName">To</label></dt>
-     <dd><input id="tagName" type="text" maxlength="24" placeholder="Their name" autocomplete="off" spellcheck="false"></dd>
-     <dt>From</dt>
-     <dd>Santa</dd>
-    </dl>
+
+  <div class="screen">
+   <div class="screen-frame" id="screen">
+    <img src="https://engage.autotorque.ai/objects/quick-uploads/1064/0cb8ec88451a68aa.jpg" alt="Santa in his toy workshop, ready to record" width="1600" height="900">
+    <button class="play" type="button" data-play aria-label="Play the sample video, Santa's message for Mia">
+     <span class="play-btn"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1v10l9-5z" fill="currentColor"/></svg></span>
+     <span class="play-label">Santa's message for Mia<small>Sample video, 56 seconds, sound on</small></span>
+    </button>
    </div>
+   <p class="screen-cap">Mia is made up for this sample. Your video is written around the details you share, so it sounds like it could only be for them.</p>
   </div>
  </div>
 </section>
 
 <div class="strip" data-section="facts">
  <ul>
-  <li>60 to 90 seconds, made for one person</li>
-  <li>Script and voice approved by you first</li>
-  <li>Delivered in the Studio and by email</li>
+  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></svg>Written with you, never from a template</li>
+  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16.5 9"/></svg>Script and voice approved by you first</li>
+  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>Made in Australia, for a summer Christmas</li>
  </ul>
 </div>
 
-<section class="section" data-section="characters">
+<section class="section" data-section="moments">
+ <div class="wrap">
+  <div class="aus">
+   <h2>The moment it plays</h2>
+   <p>Christmas here looks like caravan parks, verandahs and a 35 degree day. Santa knows. Tell him about the Christmas you actually have, and he'll talk about it like he's been watching all year.</p>
+  </div>
+  <div class="mosaic">
+   <figure class="m1"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/671ec818ed180862.jpg" alt="A family at a caravan park cheering at a tablet at dusk" loading="lazy"><figcaption>Christmas at the caravan park</figcaption></figure>
+   <figure class="m2"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/e8b8934f26229abb.jpg" alt="Two children in Christmas pyjamas watching a tablet beside the tree" loading="lazy"><figcaption>Christmas Eve, just before bed</figcaption></figure>
+   <figure class="m3"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/ad6a9ae167843c74.jpg" alt="A dad in hi-vis laughing with his daughter in front of a laptop" loading="lazy"><figcaption>Straight home from work</figcaption></figure>
+   <figure class="m4"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/1671487e62c6b003.jpg" alt="Grandparents watching two children cheer at a laptop in a farmhouse kitchen" loading="lazy"><figcaption>Holidays at Nan and Pop's farm</figcaption></figure>
+   <figure class="m5"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/768aa684e5e45b55.jpg" alt="Two dads and their children laughing at a tablet on a deck at dusk" loading="lazy"><figcaption>Out on the deck after dinner</figcaption></figure>
+   <figure class="m6"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/b850bb09872cb78b.jpg" alt="A mum in scrubs and her son laughing at a phone on the stairs" loading="lazy"><figcaption>The minute Mum walked in</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="section script" data-section="details">
+ <div class="wrap">
+  <div class="section-head">
+   <h2>Every detail comes from you</h2>
+   <p>Santa only knows what you tell him. Here's the script from Mia's sample. The highlighted parts came from her family. The rest is Santa being Santa.</p>
+  </div>
+  <div class="script-grid">
+   <article class="page" aria-label="Sample script">
+    <div class="page-head"><strong>For Mia</strong><span>Toy Workshop Santa, Voice 1</span></div>
+    <p>Ho ho ho, hello <mark>Mia</mark>! It's Santa, calling all the way from the North Pole. I've just come in from feeding the reindeer their breakfast, and Dasher always asks for seconds.</p>
+    <p>Mia, I have been hearing wonderful things about you this year. You've been such a kind big sister to <mark>little Leo</mark><sup>1</sup>, helping Mum and making him giggle. And you've been looking after <mark>Biscuit</mark><sup>2</sup> so well, making sure he always has his dinner. Biscuit is very lucky to have you.</p>
+    <p>Now, <mark>swimming without your floaties</mark><sup>3</sup>, that is amazing. I'm so proud of how hard you worked. And <mark>riding your bike without training wheels</mark><sup>3</sup> too. You must be zooming around!</p>
+    <p>My elf Pip loves <mark>unicorns</mark><sup>4</sup> just as much as you do. She's been painting tiny unicorns all over the sleigh. Merry Christmas, Mia. Ho ho ho!</p>
+   </article>
+   <div class="notes">
+    <h3>What Mia's family shared</h3>
+    <ol>
+     <li>Her little brother is Leo, and she's a kind big sister</li>
+     <li>She looks after the family dog, Biscuit</li>
+     <li>Two proud moments: swimming without floaties, and riding without training wheels</li>
+     <li>She loves unicorns</li>
+    </ol>
+    <div class="touch"><strong>Santa's own touches</strong>Dasher asking for seconds, and an elf called Pip who loves unicorns too. Santa adds little North Pole details so it feels like his world, not a form letter.</div>
+   </div>
+  </div>
+  <div class="share">
+   <h3>What's worth sharing</h3>
+   <ul>
+    <li><strong>Their name</strong>And a nickname, plus how to say it if it's unusual.</li>
+    <li><strong>A proud moment</strong>Big or small. A first swim, a kind act, a tricky year handled well.</li>
+    <li><strong>Their people</strong>A brother, a best friend, Nan, the dog. Santa loves a name to mention.</li>
+    <li><strong>What they're into</strong>Dinosaurs, netball, drawing, Minecraft. Anything that lights them up.</li>
+    <li><strong>A wish</strong>Santa mentions it warmly without promising it, so Christmas morning stays yours.</li>
+    <li><strong>Nothing too personal</strong>First names only. No addresses, schools or surnames needed.</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="how" data-section="how-it-works">
+ <div class="wrap">
+  <div class="section-head">
+   <h2>How it works</h2>
+   <p>The Studio is a friendly chat that guides you through each step. Most people finish in under ten minutes.</p>
+  </div>
+  <ol class="steps">
+   <li><h3>Order</h3><p>Pay securely and your order code arrives by email straight away.</p><span class="time">1 minute</span></li>
+   <li><h3>Tell Santa about them</h3><p>Pick a character and voice, then share their name and a few things from their year.</p><span class="time">About 5 minutes</span></li>
+   <li><h3>Approve and listen</h3><p>Read the script, ask for changes, then hear Santa read it before the video is made.</p><span class="time">A few minutes</span></li>
+   <li><h3>Press play together</h3><p>Your video arrives in the chat and by email, ready to download and keep.</p><span class="time">About 10 minutes</span></li>
+  </ol>
+ </div>
+</section>
+
+<section class="night section" data-section="characters">
  <div class="wrap">
   <div class="section-head">
    <h2>Choose who visits</h2>
-   <p>Three characters, each with a choice of voices you can listen to in the Studio before you decide.</p>
+   <p>Three characters, each with a choice of voices. You can listen to every voice in the Studio before you decide.</p>
   </div>
   <div class="cast">
    <figure>
@@ -437,42 +522,70 @@
     <figcaption><h3>Baking Day Mrs Claus</h3><p>In her Christmas kitchen, with news from the workshop and a warm word.</p></figcaption>
    </figure>
   </div>
+  <p class="cast-note">Want to hear them first? <a href="https://santamagic.com.au/studio/">Listen to the voices in the Studio</a></p>
  </div>
 </section>
 
-<section class="section" id="how" data-section="how-it-works" style="padding-top:0">
+<section class="section" data-section="who-for">
  <div class="wrap">
   <div class="section-head">
-   <h2>How it works</h2>
-   <p>The Studio guides you through each step. Most people finish in under 10 minutes.</p>
+   <h2>For everyone on your list</h2>
+   <p>Most videos are for children, but Santa is happy to visit anyone who needs a little Christmas.</p>
   </div>
-  <ol class="steps">
-   <li><h3>Order</h3><p>Pay securely and your order code arrives by email straight away.</p></li>
-   <li><h3>Tell us about them</h3><p>Pick a character and voice, then share their name, wishes and proud moments.</p></li>
-   <li><h3>Approve and listen</h3><p>Read the script, ask for changes, then hear a voice preview.</p></li>
-   <li><h3>Watch together</h3><p>Your video arrives in about 10 minutes, ready to download and keep.</p></li>
-  </ol>
+  <div class="who-grid">
+   <article class="who-card"><div class="ph"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/01361fa03d2e2cf5.jpg" alt="A girl in her school uniform laughing at a laptop" loading="lazy"></div><div class="tx"><h3>Children</h3><p>Their name, their year, their wishes. The one they'll ask to watch again tomorrow.</p></div></article>
+   <article class="who-card"><div class="ph"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/246ec3ad3c596b6b.jpg" alt="Grandparents smiling as their grandchildren cheer at a tablet" loading="lazy"></div><div class="tx"><h3>Grandparents and family</h3><p>A message for Nan and Pop, or one the whole family watches together on Christmas Day.</p></div></article>
+   <article class="who-card"><div class="ph"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/1b89af810f537964.jpg" alt="Two teenage boys laughing at a laptop in a bedroom" loading="lazy"></div><div class="tx"><h3>Friends and co-workers</h3><p>A warm, funny message for a best mate, a big kid, or the office Kris Kringle.</p></div></article>
+  </div>
  </div>
 </section>
 
-<section class="field-red section" id="order" data-section="order">
+<section class="section promises" data-section="promises">
+ <div class="wrap">
+  <div class="section-head">
+   <h2>Our promises to you</h2>
+   <p>Santa Magic is new for Christmas 2026. Here's exactly what you can count on.</p>
+  </div>
+  <div class="promise-grid">
+   <div class="promise"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h12l5 5v17H7z"/><path d="M19 4v5h5M11 15h9M11 19h6"/></svg><h3>You approve every word</h3><p>Nothing is recorded until you're happy with the script. Ask for changes as you go.</p></div>
+   <div class="promise"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12v6M10 8v14M15 5v20M20 9v12M25 13v4"/></svg><h3>You hear the voice first</h3><p>Listen to Santa read your script before the video is made, with up to three previews.</p></div>
+   <div class="promise"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="12" width="20" height="13" rx="1.5"/><path d="M3.5 8h23v4h-23zM15 8v17M15 8c-2-4-7-4-6-1 1 2 6 1 6 1zm0 0c2-4 7-4 6-1-1 2-6 1-6 1z"/></svg><h3>Santa never promises a present</h3><p>He'll mention their wish warmly, without promising it, so Christmas morning stays in your hands.</p></div>
+   <div class="promise"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3l2.6 7.4L25 13l-7.4 2.6L15 23l-2.6-7.4L5 13l7.4-2.6z"/><path d="M24 21l.9 2.1L27 24l-2.1.9L24 27l-.9-2.1L21 24l2.1-.9z"/></svg><h3>Honest about the magic</h3><p>Santa's video is created with AI, from a script written with you. We say so plainly, here and in the Studio.</p></div>
+   <div class="promise"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3l10 4v7c0 6.5-4.3 11.2-10 13-5.7-1.8-10-6.5-10-13V7z"/><path d="M10.5 15l3 3 6-6.5"/></svg><h3>Their details stay private</h3><p>What you share is used only to make your video, then deleted. <a href="https://santamagic.com.au/privacy/">Read our privacy policy</a></p></div>
+   <div class="promise"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h22v14H12l-6 5v-5H4z"/><path d="M9 12h12M9 16h8"/></svg><h3>Real people, real help</h3><p>Something not right? Email <a href="mailto:support@santamagic.com.au">support@santamagic.com.au</a> and our Australian team will sort it out.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="band" data-section="band">
+ <div class="ph"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/8b56698e408c1127.jpg" alt="A family laughing together on the couch as they watch a tablet" loading="lazy"></div>
+ <div class="tx">
+  <h2>Ten minutes of your time. A moment they'll replay all summer.</h2>
+  <p>Download your video and keep it. Play it on the TV on Christmas morning, send it to the grandparents, and watch it again next year.</p>
+  <a class="btn btn-ivory" href="#order">Create their video</a>
+ </div>
+</section>
+
+<section class="field-red section order" id="order" data-section="order">
  <div class="ribbon-v order-ribbon" aria-hidden="true"></div>
  <div class="wrap order-grid">
   <div>
    <h2>One video, made just for them</h2>
    <ul class="ticks">
     <li>A 60 to 90 second video from Santa or Mrs Claus</li>
-    <li>A script built around their name and your details</li>
+    <li>A script written around their name and your details</li>
     <li>Up to 5 rounds of script changes</li>
     <li>A voice preview first, plus up to 2 more</li>
-    <li>Delivered in the Studio and by email to download</li>
-    <li>Gentle, warm and right for any age</li>
+    <li>Delivered in the Studio and by email, ready to download</li>
+    <li>Gentle and warm, right for any age</li>
    </ul>
    <p class="already">Already ordered? <a href="https://santamagic.com.au/studio/">Open the Studio</a></p>
   </div>
   <div class="order-card">
+   <span class="badge">New for Christmas 2026</span>
    <div class="price">A$24.95</div>
-   <p class="price-sub">One personalised video. One-off payment.</p>
+   <p class="price-sub">One personalised video. One-off payment, no GST.</p>
+   <p class="for-note" id="forNote" role="status"></p>
    <form id="buyForm" novalidate>
     <label for="name">Your name</label>
     <input id="name" name="name" type="text" autocomplete="name">
@@ -480,7 +593,7 @@
     <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
     <button class="btn btn-red" type="submit" id="buyBtn">Pay A$24.95</button>
     <p class="err" id="err" role="alert">Enter a valid email address. Your order code is sent there.</p>
-    <p class="fine">Secure payment by Stripe. Your order code is emailed straight after payment.</p>
+    <p class="fine">Secure payment by Stripe. Your order code is emailed straight after payment. By paying you agree to our <a href="https://santamagic.com.au/terms/">Terms</a> and <a href="https://santamagic.com.au/privacy/">Privacy Policy</a>.</p>
    </form>
   </div>
  </div>
@@ -490,11 +603,13 @@
  <div class="wrap">
   <div class="section-head center" style="text-align:center"><h2>Questions</h2></div>
   <div class="faq">
-   <details><summary>How long does it take?</summary><p>Most people finish the Studio in 5 to 10 minutes. Once you approve the voice preview, your video is usually ready in about 10 minutes.</p></details>
-   <details><summary>Can I make changes?</summary><p>Yes. You can ask for up to 5 rounds of script changes and hear a voice preview, with up to 2 more previews if you'd like a different voice or a fresh take. Because you approve the script and voice first, your video is final once it's created.</p></details>
-   <details><summary>Will Santa promise a present?</summary><p>No. Santa mentions their wishes warmly without promising anything, so the magic holds whatever Christmas morning brings.</p></details>
-   <details><summary>How do I get my video?</summary><p>It appears in the Studio and is emailed to you. The link stays active for 7 days, so download your video to keep it.</p></details>
-   <details><summary>What if something isn't right?</summary><p>Email <a href="mailto:support@santamagic.com.au">support@santamagic.com.au</a> with your order code and our team will help.</p></details>
+   <details><summary>How long does it take?</summary><p>Most people finish the Studio in 5 to 10 minutes. Once you approve the voice preview, your video is usually ready in about 10 minutes and arrives in the chat and by email.</p></details>
+   <details><summary>Is Santa Magic made with AI?</summary><p>Yes. Santa and Mrs Claus are brought to life with AI video and voice technology. The script is written with you in the Studio, you approve every word, and you hear the voice before the video is made.</p></details>
+   <details><summary>Can I make changes?</summary><p>Yes. You can ask for up to 5 rounds of script changes and hear a voice preview, with up to 2 more previews if you'd like a different voice. Because you approve the script and voice first, your video is final once it's made.</p></details>
+   <details><summary>Will Santa promise a present?</summary><p>No. Santa mentions their wish warmly without promising anything, so the magic holds whatever Christmas morning brings.</p></details>
+   <details><summary>How do I get my video?</summary><p>It appears in the Studio and is emailed to you as a link to an MP4 video that plays on phones, tablets, computers and smart TVs. The link stays active for 7 days, so download your video to keep it.</p></details>
+   <details><summary>What happens to the details I share?</summary><p>We use them only to write and make your video. We never sell them or use them for advertising, and we delete the details about the person your video is for after delivery. Our <a href="https://santamagic.com.au/privacy/">privacy policy</a> has the full detail.</p></details>
+   <details><summary>What if something isn't right?</summary><p>Email <a href="mailto:support@santamagic.com.au">support@santamagic.com.au</a> with your order code. If something went wrong on our side, we'll remake your video or refund you. Your rights under the Australian Consumer Law always apply. See our <a href="https://santamagic.com.au/terms/">Terms</a>.</p></details>
   </div>
  </div>
 </section>
@@ -502,19 +617,41 @@
 
 <footer class="site-foot" data-section="footer">
  <div class="wrap">
-  <a class="brand" href="https://santamagic.com.au/"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/d25294f06750ae52.jpg" alt="" width="52" height="52"><span>Santa Magic</span></a>
-  <nav aria-label="Footer"><a href="https://santamagic.com.au/studio/">Studio</a><a href="mailto:support@santamagic.com.au">support@santamagic.com.au</a></nav>
+  <div class="foot-grid">
+   <a class="brand" href="https://santamagic.com.au/"><img src="https://engage.autotorque.ai/objects/quick-uploads/1064/d25294f06750ae52.jpg" alt="" width="48" height="48"><span>Santa Magic</span></a>
+   <nav aria-label="Footer"><a href="https://santamagic.com.au/studio/">Studio</a><a href="https://santamagic.com.au/terms/">Terms</a><a href="https://santamagic.com.au/privacy/">Privacy</a><a href="mailto:support@santamagic.com.au">support@santamagic.com.au</a></nav>
+  </div>
+  <div class="foot-small"><span>Santa Magic is an Australian business. Videos are created with AI from scripts you approve.</span><span>Prices in Australian dollars.</span></div>
  </div>
 </footer>
 
 <script>
 (function(){
- var input=document.getElementById('tagName'),title=document.getElementById('heroTitle'),cta=document.getElementById('heroCta');
+ var input=document.getElementById('tagName'),who=document.getElementById('heroWho'),cta=document.getElementById('heroCta');
  input.addEventListener('input',function(){
   var n=input.value.replace(/[<>]/g,'').trim();
-  if(n){title.textContent='Santa has a message for '+n+'.';cta.textContent='Create '+n+(/s$/i.test(n)?"'":"'s")+' video';}
-  else{title.textContent='Santa has a message for someone special.';cta.textContent='Create their video';}
+  if(n){who.textContent=n;cta.textContent='Create '+n+(/s$/i.test(n)?"'":"'s")+' video';}
+  else{who.textContent='someone special';cta.textContent='Create their video';}
  });
+
+ var SRC='https://engage.autotorque.ai/objects/quick-uploads/1064/55faa887ea9914e1.mp4',screen=document.getElementById('screen'),started=false;
+ function playSample(){
+  if(!started){
+   started=true;
+   var v=document.createElement('video');
+   v.src=SRC;v.controls=true;v.playsInline=true;v.preload='auto';
+   v.poster='https://engage.autotorque.ai/objects/quick-uploads/1064/0cb8ec88451a68aa.jpg';
+   v.setAttribute('aria-label',"Sample video: Santa's message for Mia");
+   screen.innerHTML='';screen.appendChild(v);
+   var p=v.play();if(p&&p.catch){p.catch(function(){});}
+  }
+  screen.scrollIntoView({behavior:'smooth',block:'center'});
+ }
+ document.querySelectorAll('[data-play]').forEach(function(b){b.addEventListener('click',playSample);});
+
+ var forMap={child:'Another one for a child? Lovely. Santa loves a busy Christmas.',family:'A message for a grandparent or family member. Santa will make it a warm one.',friend:'One for a friend or co-worker. Santa has a good sense of humour.'};
+ try{var f=new URLSearchParams(location.search).get('for');if(f&&forMap[f]){var fn=document.getElementById('forNote');fn.textContent=forMap[f];fn.classList.add('show');}}catch(e){}
+
  var form=document.getElementById('buyForm'),btn=document.getElementById('buyBtn'),err=document.getElementById('err'),email=document.getElementById('email');
  form.addEventListener('submit',function(e){
   e.preventDefault();
