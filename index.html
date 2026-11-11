@@ -411,7 +411,7 @@
     <a class="btn btn-ivory" href="#order" id="heroCta">Create their video</a>
     <button class="link-play" type="button" data-play><span class="dot"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1v10l9-5z" fill="currentColor"/></svg></span>Watch a sample</button>
    </div>
-   <div class="hero-meta"><span>A$24.95, one video</span><span>Delivered by email within 15 minutes</span><span>Secure checkout by Stripe</span></div>
+   <div class="hero-meta"><span>A$16.45, one video</span><span>Delivered by email within 15 minutes</span><span>Secure checkout by Stripe</span></div>
   </div>
 
   <div class="screen">
@@ -588,7 +588,7 @@
   </div>
   <div class="order-card">
    <span class="badge">New for Christmas 2026</span>
-   <div class="price">A$24.95</div>
+   <div class="price">A$16.45</div>
    <p class="price-sub">One personalised video. One-off payment.</p>
    <p class="for-note" id="forNote" role="status"></p>
    <form id="buyForm" novalidate>
@@ -596,7 +596,7 @@
     <input id="name" name="name" type="text" autocomplete="name">
     <label for="email">Your email</label>
     <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
-    <button class="btn btn-red" type="submit" id="buyBtn">Pay A$24.95</button>
+    <button class="btn btn-red" type="submit" id="buyBtn">Pay A$16.45</button>
     <p class="err" id="err" role="alert">Enter a valid email address. Your order code is sent there.</p>
     <p class="fine">Secure payment by Stripe. Your order code is emailed straight after payment. By paying you agree to our <a href="https://santamagic.com.au/terms/">Terms</a> and <a href="https://santamagic.com.au/privacy/">Privacy Policy</a>.</p>
    </form>
@@ -665,15 +665,15 @@
   var v=email.value.trim();
   if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){err.textContent='Enter a valid email address. Your order code is sent there.';err.classList.add('show');email.focus();return;}
   err.classList.remove('show');
-  btn.disabled=true;btn.textContent='Opening secure checkout';
+     btn.disabled=true;btn.textContent='Opening secure checkout';
   try{
    if(typeof window.__processDonation!=='function'){throw new Error('not ready');}
-   var p=window.__processDonation({amount:24.95,email:v,name:document.getElementById('name').value.trim(),productName:'Santa Magic personalised video',productDescription:'Includes A$2.27 GST'});
+   var p=window.__processDonation({amount:16.45,email:v,name:document.getElementById('name').value.trim(),productName:'Santa Magic personalised video',productDescription:'Includes A$1.50 GST'});
    if(p&&p.catch){p.catch(function(){reset('Checkout did not open. Please try again.');});}
   }catch(x){reset('Checkout did not open. Please try again.');}
   setTimeout(function(){reset();},10000);
  });
- function reset(msg){btn.disabled=false;btn.textContent='Pay A$24.95';if(msg){err.textContent=msg;err.classList.add('show');}}
+ function reset(msg){btn.disabled=false;btn.textContent='Pay A$16.45';if(msg){err.textContent=msg;err.classList.add('show');}}
 })();
 </script>
 
