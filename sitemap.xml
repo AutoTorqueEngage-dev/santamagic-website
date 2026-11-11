@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://santamagic.com.au/</loc>
+    <lastmod>2026-11-11T09:07:53.044Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://santamagic.com.au/terms/</loc>
+    <lastmod>2026-11-11T09:00:31.709Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://santamagic.com.au/privacy/</loc>
     <lastmod>2026-11-11T08:35:18.837Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://santamagic.com.au/terms/</loc>
-    <lastmod>2026-11-11T08:35:12.367Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://santamagic.com.au/studio/</loc>
     <lastmod>2026-11-11T08:35:06.293Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://santamagic.com.au/</loc>
-    <lastmod>2026-11-11T08:34:59.376Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
