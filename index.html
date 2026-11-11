@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<script>(function(){try{var p=new URLSearchParams(location.search);if(p.get('payment')==='success'||p.get('donation')==='success'||p.get('cart')==='success'){location.replace('https://santamagic.com.au/studio/');}}catch(e){}})();</script>
+<script>(function(){try{if(/[?&#](payment|donation|cart)=success/.test(location.search+location.hash)){location.replace('https://santamagic.com.au/studio/');}}catch(e){}})();</script>
 
 
 <meta name="theme-color" content="#0F2A22">
