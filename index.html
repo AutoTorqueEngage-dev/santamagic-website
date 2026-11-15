@@ -22,14 +22,14 @@
 
 <!-- SEO Meta Tags -->
 <title>Santa Magic | Personalised video messages from Santa and Mrs Claus</title>
-<meta name="description" content="A personalised video from Santa or Mrs Claus, written with you around their year. Hear the voice before it is made. A$16.45, everything included." />
+<meta name="description" content="A personalised video from Santa or Mrs Claus, written with you around their year. Hear the voice before it's made. A$10.95, everything included." />
 <meta property="og:title" content="Santa Magic | Personalised video messages from Santa and Mrs Claus" />
-<meta property="og:description" content="A personalised video from Santa or Mrs Claus, written with you around their year. Hear the voice before it is made. A$16.45, everything included." />
+<meta property="og:description" content="A personalised video from Santa or Mrs Claus, written with you around their year. Hear the voice before it's made. A$10.95, everything included." />
 <meta property="og:image" content="https://engage.autotorque.ai/objects/quick-uploads/1064/0cb8ec88451a68aa.jpg" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Santa Magic | Personalised video messages from Santa and Mrs Claus" />
-<meta name="twitter:description" content="A personalised video from Santa or Mrs Claus, written with you around their year. Hear the voice before it is made. A$16.45, everything included." />
+<meta name="twitter:description" content="A personalised video from Santa or Mrs Claus, written with you around their year. Hear the voice before it's made. A$10.95, everything included." />
 <meta name="twitter:image" content="https://engage.autotorque.ai/objects/quick-uploads/1064/0cb8ec88451a68aa.jpg" />
 <!-- End SEO Meta Tags -->
 <script data-lp-token-hydrate>
@@ -414,7 +414,7 @@
     <a class="btn btn-ivory" href="#order" id="heroCta">Create their video</a>
     <button class="link-play" type="button" data-play><span class="dot"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1v10l9-5z" fill="currentColor"/></svg></span>Watch a sample</button>
    </div>
-   <div class="hero-meta"><span>A$10.95, everything included</span><span>Ready in about ten minutes</span><span>Made in Australia</span></div>
+   <div class="hero-meta"><span>A$10.95, everything included</span><span>In your inbox within 15 minutes</span><span>Made in Australia</span></div>
   </div>
 
   <div class="screen">
@@ -500,7 +500,7 @@
  <div class="wrap">
   <div class="section-head">
    <h2>How it works</h2>
-   <p>A friendly chat guides you through each step. Most people are finished in about ten minutes.</p>
+   <p>A friendly chat guides you through each step. It usually takes about ten minutes.</p>
   </div>
   <ol class="steps">
    <li><h3>Order</h3><p>Checkout takes a minute, and your order code arrives by email straight away.</p><span class="time">1 minute</span></li>
@@ -532,7 +532,21 @@
     <figcaption><h3>Mrs Claus</h3><p>With a warm smile and the latest news from the North Pole.</p></figcaption>
    </figure>
   </div>
-  <p class="cast-note">Want to hear them first? <a href="https://santamagic.com.au/studio/">Listen to the voices in the Studio</a></p>
+<div class="voices-home" aria-label="Voice samples">
+ <p class="cast-note">Want to hear them first? Tap a voice to play a short sample.</p>
+ <div class="vh-group"><span class="vh-label">Santa</span>
+  <button type="button" class="vh" aria-pressed="false" data-src="https://engage.autotorque.ai/objects/quick-uploads/1064/7ba777ae160198c1.mp3">Voice 1</button>
+  <button type="button" class="vh" aria-pressed="false" data-src="https://engage.autotorque.ai/objects/quick-uploads/1064/a6d1ab0608618587.mp3">Voice 2</button>
+  <button type="button" class="vh" aria-pressed="false" data-src="https://engage.autotorque.ai/objects/quick-uploads/1064/9954ec72fadd1851.mp3">Voice 3</button>
+  <button type="button" class="vh" aria-pressed="false" data-src="https://engage.autotorque.ai/objects/quick-uploads/1064/7d90704d0e188a1c.mp3">Voice 4</button>
+  <button type="button" class="vh" aria-pressed="false" data-src="https://engage.autotorque.ai/objects/quick-uploads/1064/006f39576724e754.mp3">Voice 5</button>
+ </div>
+ <div class="vh-group"><span class="vh-label">Mrs Claus</span>
+  <button type="button" class="vh" aria-pressed="false" data-src="https://engage.autotorque.ai/objects/quick-uploads/1064/4fd5d4c94db102f4.mp3">Voice 1</button>
+  <button type="button" class="vh" aria-pressed="false" data-src="https://engage.autotorque.ai/objects/quick-uploads/1064/d63925c1336a4f1e.mp3">Voice 2</button>
+  <button type="button" class="vh" aria-pressed="false" data-src="https://engage.autotorque.ai/objects/quick-uploads/1064/01ba85094220d1d2.mp3">Voice 3</button>
+ </div>
+</div>
   <div class="cta-row"><a class="btn btn-ivory" href="#order">Choose who visits them</a></div>
  </div>
 </section>
@@ -702,5 +716,6 @@
 })();
 </script>
 
+<script>(function(){var a=new Audio(),cur=null;a.preload='none';function stop(){if(cur){cur.setAttribute('aria-pressed','false');cur=null;}}document.querySelectorAll('.vh').forEach(function(b){b.addEventListener('click',function(){if(cur===b){if(a.paused){a.play();b.setAttribute('aria-pressed','true');}else{a.pause();b.setAttribute('aria-pressed','false');}return;}stop();cur=b;a.src=b.getAttribute('data-src');b.setAttribute('aria-pressed','true');a.play().catch(function(){stop();});});});a.addEventListener('ended',stop);})();</script>
 </body>
 </html>
