@@ -338,7 +338,7 @@
    <span class="eyebrow">Your video is ready</span>
    <h1 id="headline">Santa has a message for someone special.</h1>
    <p class="lead" id="lead">Press play, then save it so you can watch it again and again.</p>
-   <div class="player" id="player">
+   <div class="player pending" id="player">
     <video id="vid" controls playsinline preload="metadata" controlslist="nodownload" disablepictureinpicture></video>
     <button type="button" class="cover" id="cover" aria-label="Press play to watch your video">
      <img src="https://engage.autotorque.ai/objects/quick-uploads/1064/d25294f06750ae52.jpg" alt="" width="108" height="108">
@@ -418,12 +418,13 @@
   if(!data){show('missing');loadChat();return;}
   if(data.exp&&data.exp<Math.floor(Date.now()/1000)){show('expired');loadChat();return;}
 
-  var vid=$('vid'),cover=$('cover'),dl=$('dl'),status=$('status'),bar=$('bar'),fill=$('barfill');
+  var vid=$('vid'),cover=$('cover'),player=$('player'),dl=$('dl'),status=$('status'),bar=$('bar'),fill=$('barfill');
   var fileName='Santa-Magic'+(data.name?'-'+data.name.replace(/[^A-Za-z0-9]+/g,'-').replace(/^-+|-+$/g,''):'')+'.mp4';
   if(data.name){
     $('headline').textContent=data.name+'’s message from Santa';
     document.title=data.name+'’s video | Santa Magic';
   }
+  function reveal(){player.className=player.className.replace(/\s*pending/,'');}
   function hideCover(){if(cover){cover.style.display='none';}}
   cover.addEventListener('click',function(){
     hideCover();
@@ -432,11 +433,13 @@
   });
   vid.addEventListener('play',hideCover);
   vid.addEventListener('loadedmetadata',function(){
-    if(vid.videoWidth>vid.videoHeight){$('player').className='player wide';}
+    if(vid.videoWidth>vid.videoHeight){player.className='player wide pending';}
+    reveal();
   });
+  setTimeout(reveal,2500);
   var failed=false;
   vid.addEventListener('error',function(){
-    if(failed)return;failed=true;hideCover();
+    if(failed)return;failed=true;hideCover();reveal();
     if(data.exp&&data.exp<Math.floor(Date.now()/1000)+60){show('expired');}
     else{
       $('lead').textContent='We couldn’t play the video here. Try refreshing the page, or reply to your video email with your order code and we’ll help straight away.';
