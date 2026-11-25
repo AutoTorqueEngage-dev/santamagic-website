@@ -338,7 +338,15 @@
    <span class="eyebrow">Your video is ready</span>
    <h1 id="headline">Santa has a message for someone special.</h1>
    <p class="lead" id="lead">Press play, then save it so you can watch it again and again.</p>
-   <div class="player" id="player"><video id="vid" controls playsinline preload="metadata" controlslist="nodownload" disablepictureinpicture></video></div>
+   <div class="player" id="player">
+    <video id="vid" controls playsinline preload="metadata" controlslist="nodownload" disablepictureinpicture></video>
+    <button type="button" class="cover" id="cover" aria-label="Press play to watch your video">
+     <img src="https://engage.autotorque.ai/objects/quick-uploads/1064/d25294f06750ae52.jpg" alt="" width="108" height="108">
+     <span class="ctitle">Santa Magic</span>
+     <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+     <span class="ctext">Press play</span>
+    </button>
+   </div>
    <div class="actions">
     <button type="button" class="btn btn-red" id="dl">Download your video</button>
     <div class="bar" id="bar" aria-hidden="true"><i id="barfill"></i></div>
@@ -390,8 +398,7 @@
       var u=new URL(p[0]);
       if(u.protocol!=='https:'||!ALLOWED.test(u.hostname)) return null;
       var name='';try{name=decodeURIComponent(p[1]||'');}catch(e){}
-      var img='';try{var iu=new URL(p[2]||'');if(iu.protocol==='https:'&&iu.hostname==='engage.autotorque.ai'){img=iu.href;}}catch(e){}
-      return {url:u.href,exp:Number(u.searchParams.get('Expires'))||0,name:name.replace(/[<>]/g,'').slice(0,40),img:img};
+      return {url:u.href,exp:Number(u.searchParams.get('Expires'))||0,name:name.replace(/[<>]/g,'').slice(0,40)};
     }catch(e){return null;}
   }
   function show(id){['ready','missing','expired'].forEach(function(x){var el=$(x);if(el)el.style.display=(x===id?'block':'none');});}
@@ -411,19 +418,25 @@
   if(!data){show('missing');loadChat();return;}
   if(data.exp&&data.exp<Math.floor(Date.now()/1000)){show('expired');loadChat();return;}
 
-  var vid=$('vid'),dl=$('dl'),status=$('status'),bar=$('bar'),fill=$('barfill');
+  var vid=$('vid'),cover=$('cover'),dl=$('dl'),status=$('status'),bar=$('bar'),fill=$('barfill');
   var fileName='Santa-Magic'+(data.name?'-'+data.name.replace(/[^A-Za-z0-9]+/g,'-').replace(/^-+|-+$/g,''):'')+'.mp4';
   if(data.name){
     $('headline').textContent=data.name+'’s message from Santa';
     document.title=data.name+'’s video | Santa Magic';
   }
-  if(data.img){vid.poster=data.img;}
+  function hideCover(){if(cover){cover.style.display='none';}}
+  cover.addEventListener('click',function(){
+    hideCover();
+    var pr=vid.play();
+    if(pr&&pr.catch){pr.catch(function(){});}
+  });
+  vid.addEventListener('play',hideCover);
   vid.addEventListener('loadedmetadata',function(){
     if(vid.videoWidth>vid.videoHeight){$('player').className='player wide';}
   });
   var failed=false;
   vid.addEventListener('error',function(){
-    if(failed)return;failed=true;
+    if(failed)return;failed=true;hideCover();
     if(data.exp&&data.exp<Math.floor(Date.now()/1000)+60){show('expired');}
     else{
       $('lead').textContent='We couldn’t play the video here. Try refreshing the page, or reply to your video email with your order code and we’ll help straight away.';
