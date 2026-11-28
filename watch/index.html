@@ -396,7 +396,7 @@
       while(h.length%4){h+='=';}
       var bin=atob(h), p=bin.split('|');
       var u=new URL(p[0]);
-      if(u.protocol!=='https:'||!ALLOWED.test(u.hostname)) return null;
+      if(u.protocol!=='https:'||!ALLOWED.test(u.hostname)||!/\.mp4$/i.test(u.pathname)) return null;
       var name='';try{name=decodeURIComponent(p[1]||'');}catch(e){}
       return {url:u.href,exp:Number(u.searchParams.get('Expires'))||0,name:name.replace(/[<>]/g,'').slice(0,40)};
     }catch(e){return null;}
