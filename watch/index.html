@@ -403,11 +403,7 @@
   }
   function show(id){['ready','missing','expired'].forEach(function(x){var el=$(x);if(el)el.style.display=(x===id?'block':'none');});}
   var data=parse(location.hash);
-  try{
-    if(data){sessionStorage.setItem(KEY,location.hash);}
-    else{var s=sessionStorage.getItem(KEY);if(s)data=parse(s);}
-  }catch(e){}
-  try{if(location.hash){history.replaceState(null,'',location.pathname);}}catch(e){}
+  try{sessionStorage.removeItem(KEY);}catch(e){}
 
   if(!data){show('missing');return;}
   if(data.exp&&data.exp<Math.floor(Date.now()/1000)){show('expired');return;}
